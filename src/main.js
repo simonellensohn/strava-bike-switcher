@@ -51,8 +51,7 @@ observeActivites((activities) => {
   activities.forEach((activity) => {
     activity.querySelector('.col-suffer-score').remove()
 
-    if (activity.querySelector('.col-type').innerHTML.toLowerCase().includes('ride')) {
+    if (activity.querySelector('.col-type').innerHTML.toLowerCase().includes('ride'))
       addBulkEditAction(activity)
-    }
   })
 })
